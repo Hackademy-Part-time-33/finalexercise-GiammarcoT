@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tecno-Shop</title>
+  <!-- cdn BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- cdn FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/75b12c4b2e.js" crossorigin="anonymous"></script>
+  <!-- cdn ANIMATE css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- link foglio CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- CDN Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- CND AOS animated on scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid bg_main">
+    <nav class="navbar navbar-expand-lg bg_main vw-100">
+      <div class="container-fluid">
+        <a class="logotitle navbar-brand font_title ms-5 ms-md-0 ps-4 ps-md-0" href="#"><img src="/media/logo.png" alt=""></a>  
+        <div class="w-100">
+          <form class="d-flex w-md-75 mx-auto me-4 me-md-0" role="search">
+            <input class="form-control me-2" type="search" placeholder="Cosa cerchi?" aria-label="Search">
+            <button class="btn btn-outline-success text-dark bg-white font_content" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav ms-md-5 mb-md-2 md-0">
+            <li class="nav-item me-5">
+              <a class="nav-link href="#"><button type="button" class="btn d" data-bs-toggle="modal" data-bs-target="#registermodal">
+                <img src="/media/icon-user.png" alt="">login</button></a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" href="#"><button type="button" class="btn"><img src="/media/facebook.png" alt=""></button></a>
+              </li>
+              <li class="nav-item m-auto me-md-1">
+                <a class="nav-link" href="#"><button type="button" class="btn"><img src="/media/instagram.png" alt=""></button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="modal fade" id="registermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <h1 class="fw-bold mb-0 fs-2">Registrati ora</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">e-mail</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">registrazione</button>
+              <small class="text-body-secondary">Cliccando Registrazione, accetti i termini d'uso.</small>
+              <hr class="my-4">
+              <h2 class="fs-5 fw-bold mb-3">Oppure utilizza i social</h2>
+              <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+                <img src="/media/google.png" alt="">
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+                <img src="/media/facebook.png" alt="">
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+                <img src="/media/github.png" alt="">
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="buttonav nav-link active" aria-current="page" href="#">Home</a>
+            <a class="buttonav nav-link mx-2" href="#">informatica</a>
+            <a class="buttonav nav-link mx-2" href="#">Telefonia</a>
+            <a class="buttonav nav-link mx-2" href="#">Elettrodomestici</a>
+            <a class="buttonav nav-link mx-2" href="#">Videogames</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="row">   
+            <div class="col-12 col-md-4 m-md-5 p-md-5 m-3 p-3 order-second order-md-first border-left border-black animate__animated animate__fadeInLeft">
+              <h2 class="font_title mt-5 pt-5">Ultimi arrivi Notebook</h2>
+              <p class="font_text fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi adipisci in nisi magnam officia ullam voluptatem tempora delectus, distinctio quae quasi, deleniti iusto soluta facilis esse repellendus blanditiis, harum suscipit.</p>
+              
+            </div>
+            
+            <div class="col-12 col-md-6 ms-auto p-5 order-first animate__animated animate__fadeInRight">
+              <img src="/media/img1.jpg" alt="" class="img1 img-fluid">
+            </div>
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="row">
+            <div class="col-12 col-md-4 m-md-5 p-md-5 m-3 p-3order-second order-md-first border-left border-black">
+              <h2 class="font_title mt-5 pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+              <p class="text-danger font_text fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi adipisci in nisi magnam officia ullam voluptatem tempora delectus, distinctio quae quasi, deleniti iusto soluta facilis esse repellendus blanditiis, harum suscipit.</p>
+              
+            </div>
+            
+            <div class="col-12 col-md-6 ms-auto p-5 order-first">
+              <img src="/media/img2.png" alt="" class="img1 img-fluid">
+            </div>
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-12 col-md-4 m-md-5 p-md-5 m-3 p-3order-second order-md-first border-left border-black">
+              <h2 class="font_title mt-5 pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+              <p class="text-danger font_text fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi adipisci in nisi magnam officia ullam voluptatem tempora delectus, distinctio quae quasi, deleniti iusto soluta facilis esse repellendus blanditiis, harum suscipit.</p>
+              
+            </div>
+            <div class="col-12 col-md-6 ms-auto p-5 order-first">
+              <img src="/media/img2.png" alt="" class="img1 img-fluid">
+            </div>
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <div class="row mx-auto ps-md-5 pt-5 m-5">
+      
+      <div class="card1 col-12 col-md-3" data-aos="zoom-in" data-aos-duration="500">
+        <div class="card" style="width: 18rem;">
+          <img src="/media/imgS24.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card2 col-12 col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="card" style="width: 18rem;">
+          <img src="/media/imgS24.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card3 col-12 col-md-3" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="card" style="width: 18rem;">
+          <img src="/media/imgS24.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card4 col-12 col-md-3" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="card" style="width: 18rem;">
+          <img src="/media/imgS24.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+  </html>
