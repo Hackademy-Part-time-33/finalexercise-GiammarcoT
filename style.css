@@ -41,6 +41,11 @@ background-color: var(--color-main);
 background-color: var(--color-secondary)    ;
 }
 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+ }
+
 .img1, .img2{
     border-bottom-left-radius: 30%;
     border-bottom-right-radius: 4%;
