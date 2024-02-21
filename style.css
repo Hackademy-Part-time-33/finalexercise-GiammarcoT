@@ -42,6 +42,10 @@
     background-color: var(--color-secondary);
 }
 
+body{
+overflow-x: hidden;
+}
+
 
 .img1, .img2{
     border-bottom-left-radius: 30%;
